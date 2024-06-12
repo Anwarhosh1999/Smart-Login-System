@@ -19,11 +19,9 @@ if (localStorage.getItem("allUsers") == null) {
 
 // ------------------------------------------------ you must log out first!
 if (localStorage.getItem("currentUser") != null) {
-  window.location.href =
-    "file:///D:/Courses/Full%20Stack%20-%20Route/FullStack%202/Assignments/Assignment%2011/Home/index.html";
+  window.location.href = "Home/index.html";
   window.alert("you must log out first!");
 }
-
 // ------------------------------------------------ signup function
 function signUp() {
   userExist();
