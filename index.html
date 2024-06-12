@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+  <title>Tranfer Factory</title>
+  <meta content=" A web design for Tranfer Factory website's login page using HTML, CSS and javaScript."
+    name="description" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- ===== Font Awesome Icon Library ===== -->
+  <link rel="stylesheet" href="assets/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+
+  <!-- Favicons -->
+  <link href="assets/img/LOGO last -06-06-06.png" rel="icon" />
+  <link href="assets/img/LOGO last -06-06-06.png" />
+
+  <!-- bootstrap CSS Files -->
+  <link href="assets/bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="loading loading-end " id="preloader">
+    <div class="load-circle"></div>
+  </div>
+  <!-- ======End Preloader ======  -->
+
+  <div class="py-5 mainBg d-flex align-items-center justify-content-center">
+    <div class="container d-flex align-items-center justify-content-center ">
+      <div class="textContainer d-flex align-items-center justify-content-center h-100">
+        <div class="textContainerInner text-center ">
+          <h2 class=" mb-lg-4 mb-md-4 mb-sm-3 mb-3">Welcome</h2>
+          <input class="form-control mb-lg-4 mb-md-4 mb-sm-3 mb-3 " type="text" oninput="nameIsValid();" id="signUpName"
+            required placeholder="Enter Your Name">
+          <div class="text-center mb-2 d-none emsg" id="incorrectNameMessage">
+            <p>User name must contain from 5 to 20 characters and A special charachter (@,_or.)</p>
+          </div>
+          <input class="form-control mb-lg-4 mb-md-4 mb-sm-3 mb-3" type="email" oninput="emailIsValid();"
+            id="signUpEmail" required placeholder="Enter Your  Email">
+          <div class="text-center mb-2 d-none emsg" id="incorrectEmailMessage"> User email must be a
+            <p> valid one. ex : Username@gmail.com.</p>
+          </div>
+          <input class="form-control mb-lg-4 mb-md-4 mb-sm-3 mb-3" type="password" oninput="passwordIsValid()"
+            id="signUpPassword" required placeholder="Enter Your Password">
+          <div class="text-center mb-2 d-none emsg" id="incorrectPasswordMessage">
+            <p>
+              Password must be a valid one that contains minimum eight characters, at least one uppercase letter, one
+              lowercase letter, one number and one special charachter.</p>
+          </div>
+          <div class="text-center mb-lg-4 mb-md-4 mb-sm-3 mb-3 d-none emsg" id="existMessage">
+            <p>This username or email already exists,
+              Please go to the signin page.</p>
+          </div>
+          <div class="text-center mb-lg-4 mb-md-4 mb-sm-3 mb-3 d-none emsg mt-2" id="fillMessage">
+            <p>Please fill the inputs
+              first.</p>
+          </div>
+          <div class="text-center mb-lg-4 mb-md-4 mb-sm-3 mb-3 d-none smsg" id="successMessage">
+            <p> Account added
+              successfully, Please go to the signin page.</p>
+          </div>
+          <button onclick="signUp()" class="btn w-100">Sign Up</button>
+          <p class=" mt-3">You have an account ?
+            <a class=" text-decoration-none" href="Sign In/index.html">SignIn</a>
+          </p>
+        </div>
+      </div>
+      <div class="imgConatainer d-flex align-items-center justify-content-center h-100">
+        <div class="imgConatainerInner "></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="assets/main.js"></script>
+</body>
+
+</html>

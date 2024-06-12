@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+  <title>Tranfer Factory</title>
+  <meta content=" A web design for Tranfer Factory website's login page using HTML, CSS and javaScript."
+    name="description" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- ===== Font Awesome Icon Library ===== -->
+  <link rel="stylesheet" href="assets/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+
+  <!-- Favicons -->
+  <link href="assets/img/LOGO last -06-06-06.png" rel="icon" />
+  <link href="assets/img/LOGO last -06-06-06.png" />
+
+  <!-- bootstrap CSS Files -->
+  <link href="assets/bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="loading loading-end " id="preloader">
+    <div class="load-circle"></div>
+  </div>
+  <!-- ======End Preloader ======  -->
+
+  <div class="py-5 mainBg d-flex align-items-center justify-content-center">
+    <div class="container d-flex align-items-center justify-content-center ">
+      <div class="textContainer d-flex align-items-center justify-content-center h-100">
+        <div class="textContainerInner text-center ">
+          <h2 class=" mb-lg-4 mb-md-4 mb-sm-3">Welcome Back</h2>
+          <input class="form-control mb-lg-4 mb-md-4 mb-sm-3  mb-3" type="email" id="signInEmail" required
+            placeholder="Enter Your  Email">
+          <input class="form-control mb-lg-4 mb-md-4 mb-sm-3  mb-3" type="password" id="signInPassword" required
+            placeholder="Enter Your Password">
+          <div class="text-center mb-lg-4 mb-md-4 mb-sm-3 mb-3 d-none emsg" id="incorrectMessage">The email address or
+            passowrd you entered isn't connected to an account. Find your account and log in.
+          </div>
+          <div class="text-center mb-lg-4 mb-md-4 mb-sm-3 mb-3 d-none emsg" id="fillMessage">Please fill the inputs
+            first </div>
+          <button onclick="signIn()" id="signInBtn" class="btn w-100">Sign In</button>
+          <p class=" mt-3">Don't Have an account ?
+            <a class=" text-decoration-none" href="../index.html">SignUp</a>
+          </p>
+        </div>
+      </div>
+      <div class="imgConatainer d-flex align-items-center justify-content-center h-100">
+        <div class="imgConatainerInner "></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/main.js"></script>
+</body>
+
+</html>
